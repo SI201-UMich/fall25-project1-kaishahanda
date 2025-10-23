@@ -53,6 +53,7 @@ def calculate_avg_profit_margin_by_region(data: List[Dict[str, str]]) -> Dict[st
             result[region] = _round2((total_profit / total_sales) * 100.0)
     return result
 
+
 def calculate_sales_and_avg_discount_by_category(data: List[Dict[str, str]]) -> Dict[str, Tuple[float, float]]:
     by_cat: Dict[str, Dict[str, float | list]] = {}
     for row in data:
@@ -147,7 +148,7 @@ def test_calculate_sales_and_avg_discount_by_category_edge_missing_discount():
         {"Category": "Office Supplies", "Sales": "200", "Discount": "0.2"},
     ]
     got = calculate_sales_and_avg_discount_by_category(data)
-    assert got["Office Supplies"] == (300.0, 0.1)
+    assert got["Office Supplies"] == (300.0, 0.1) 
 
 def run_all_tests():
     test_calculate_avg_profit_margin_by_region_general_two_regions()
@@ -169,6 +170,7 @@ def main():
     print("Average Profit Margin by Region (pct):", profit_margin_by_region)
     print("Total Sales & Average Discount by Category:", sales_discount_by_category)
     print("Files written: avg_profit_margin_by_region.txt, sales_and_discount_by_category.csv")
+    
 
 if __name__ == "__main__":
     run_all_tests()
