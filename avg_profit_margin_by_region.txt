@@ -1,0 +1,4 @@
+South: 11.93
+West: 14.94
+Central: 7.92
+East: 13.48
