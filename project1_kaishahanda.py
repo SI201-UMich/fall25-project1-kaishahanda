@@ -2,7 +2,7 @@
 # Student ID: 72778485
 # Email: kaishah@umich.edu
 # Collaborators: None
-# GenAI Use: Used ChatGPT to plan project structure and function design
+# GenAI Use: Used ChatGPT to find debugging strategies and implement the way that some functions needed to be set up, as well as the 
 # Dataset: Sample Superstore Dataset
 
 import csv
